@@ -7,8 +7,7 @@ from flask_login import login_user, login_required, current_user
 from app.forms import LoginForm
 from app.models import User
 
-from camera import WebCam
-from camera import PiCamera
+from camera import WebCam, PiCamera
 
 camera = PiCamera(flip=False) # flip pi camera if upside down.
 # camera = WebCam()
