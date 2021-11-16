@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block app_content %}
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<title>Make - PiStream</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <div class="row-fluid">
+                <img id="main_img"   style="height:100vh;" src="{{ url_for('video_feed') }}" class="img-responsive">
+    </div>
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/static/lib/js/bootstrap.js"></script>
+
+
+{% endblock %}

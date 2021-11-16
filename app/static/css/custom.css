@@ -1,0 +1,40 @@
+.navbar-nav > .active  b{
+    color : white;
+}
+
+.navbar {
+    padding-bottom: 0px;
+    margin: 0 0 0 0;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+  padding-up: 15px;
+  line-height: 55px;
+    margin: 0 0 0 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fedbbf;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: black
+}
+
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+td, th, table {
+    padding: 5px;
+}
+
+.row-fluid{text-align:center;}
+.img-responsive{margin:0 auto}
