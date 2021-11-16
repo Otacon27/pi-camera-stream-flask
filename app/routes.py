@@ -10,8 +10,8 @@ from app.models import User
 from camera import WebCam
 from camera import PiCamera
 
-#camera = PiCamera(flip=False) # flip pi camera if upside down.
-camera = WebCam()
+camera = PiCamera(flip=False) # flip pi camera if upside down.
+# camera = WebCam()
 
 
 @app.route('/login', methods=['GET', 'POST'])
