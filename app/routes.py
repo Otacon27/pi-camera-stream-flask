@@ -9,7 +9,6 @@ from app.models import User
 
 from camera import WebCam, PiCamera
 
-camera = PiCamera(flip=False) # flip pi camera if upside down.
 # camera = WebCam()
 
 
@@ -47,5 +46,6 @@ def gen(camera):
 @app.route('/video_feed')
 @login_required
 def video_feed():
+    camera = PiCamera(flip=False)  # flip pi camera if upside down.
     return Response(gen(camera),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
